@@ -12,6 +12,11 @@ import { ThemeContextProvider } from "./components/context/ThemeContext";
 import Box from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
 import User from "./components/context/User";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
+import List from "./components/generics/List";
+import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateLiterals/Toast";
 
 function App() {
   const personName = {
@@ -59,9 +64,21 @@ function App() {
         <Box />
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+
+      {/* <List
+        items={["Batman", "Superman", "Wonder Woman"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+
+      {/* <RandomNumber value={10} isPositive /> */}
+
+      <Toast position="center-bottom" />
     </div>
   );
 }
