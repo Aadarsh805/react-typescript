@@ -8,6 +8,8 @@ import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import Box from "./components/context/Box";
 
 function App() {
   const personName = {
@@ -51,6 +53,9 @@ function App() {
 
       {/* <Container styles={{ border: "1px solid red", padding: "1rem" }} /> */}
 
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
       
     </div>
   );
