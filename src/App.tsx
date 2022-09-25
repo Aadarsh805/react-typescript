@@ -49,7 +49,9 @@ function App() {
       />
       <Input value="" handleChange={(event) => console.log(event)} /> */}
 
-      <Container styles={{ border: "1px solid red", padding: "1rem" }} />
+      {/* <Container styles={{ border: "1px solid red", padding: "1rem" }} /> */}
+
+      
     </div>
   );
 }
