@@ -12,6 +12,8 @@ import { ThemeContextProvider } from "./components/context/ThemeContext";
 import Box from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
 import User from "./components/context/User";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   const personName = {
@@ -59,9 +61,11 @@ function App() {
         <Box />
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
